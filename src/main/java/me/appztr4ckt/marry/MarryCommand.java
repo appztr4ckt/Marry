@@ -288,16 +288,16 @@ public class MarryCommand implements CommandExecutor {
         player.sendMessage(replacePlaceholders(messagesConfig.getString("messages.status.currentStatus"), player, partnerName));
     }
 
-    private String replacePlaceholders(String message, Player player, String partnerName) {
+    private String replacePlaceholders(String message, Player player, String targetName) {
         String prefix = messagesConfig.getString("messages.prefix");
         message = message.replace("{prefix}", prefix);
         if (player != null) {
             message = message.replace("{player}", player.getName());
         }
-        if (partnerName != null) {
-            message = message.replace("{partner}", partnerName);
+        if (targetName!= null) {
+            message = message.replace("{partner}", targetName);
+            message = message.replace("{target}", targetName);
         }
         return message;
     }
-    //public String replace(String text, String var)
 }
