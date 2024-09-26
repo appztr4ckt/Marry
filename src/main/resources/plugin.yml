@@ -1,0 +1,9 @@
+name: Marry
+version: 1.0
+main: me.appztr4ckt.marry.Marry
+api-version: 1.21
+commands:
+  marry:
+    description: "Marriage plugin commands"
+    usage: "/marry <subcommand> [<player>]"
+    aliases: [heiraten, heirat, ehepartner, ehe]

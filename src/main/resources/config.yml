@@ -1,0 +1,54 @@
+messages:
+  prefix: '§a[Marry] §r'
+  help:
+    header: "{prefix} §eHier sind die verfügbaren Befehle:"
+    apply: "{prefix} §e/antrag <Spieler> - Sendet eine Heiratsanfrage an den angegebenen Spieler."
+    accept: "{prefix} §e/ja <Spieler> - Akzeptiert die Heiratsanfrage des angegebenen Spielers."
+    divorce: "{prefix} §e/scheiden - Trennt sich von dem derzeitigen Partner."
+    teleport: "{prefix} §e/teleport - Teleportiert zum Partner."
+    kiss: "{prefix} §e/kuss - Gibt dem Partner einen Kuss."
+    child: "{prefix} §e/kind - Erzeugt ein Kind mit dem Partner."
+    status: "{prefix} §e/status <Spieler> - Zeigt den Beziehungsstatus des angegebenen Spielers an."
+    footer: "{prefix} §eVerwende /<Befehl> für weitere Hilfe."
+  onlyPlayers: "{prefix} §cDieser Befehl kann nur von Spielern verwendet werden."
+  apply:
+    usage: "{prefix} §cVerwendung: /antrag <Spieler>"
+    playerNotFound: "{prefix} §cDer angegebene Spieler ist nicht online."
+    selfMarriage: "{prefix} §cDu kannst dich nicht selbst heiraten."
+    alreadyMarried: "{prefix} §cDu bist bereits verheiratet."
+    targetMarried: "{prefix} §cDer angegebene Spieler ist bereits verheiratet."
+    requestAlreadySent: "{prefix} §cDu hast bereits eine Anfrage an diesen Spieler gesendet."
+    requestReceived: "{prefix} §eDu hast eine Heiratsanfrage von {player} erhalten."
+    requestSent: "{prefix} §eDu hast eine Heiratsanfrage an {target} gesendet."
+    requestExpired: "{prefix} §cDie Heiratsanfrage an {target} ist abgelaufen."
+  accept:
+    usage: "{prefix} §cVerwendung: /ja <Spieler>"
+    requesterNotFound: "{prefix} §cDer angegebene Spieler ist nicht online."
+    alreadyMarried: "{prefix} §cDu bist bereits verheiratet."
+    noRequest: "{prefix} §cDu hast keine Heiratsanfrage von diesem Spieler erhalten."
+    married: "{prefix} §e{player} und {requester} haben geheiratet!"
+  divorce:
+    notMarried: "{prefix} §cDu bist nicht verheiratet."
+    partnerLeft: "{prefix} §eDein Partner {player} hat die Ehe beendet."
+    divorced: "{prefix} §e{player} hat sich von seinem Partner getrennt."
+  teleport:
+    notMarried: "{prefix} §cDu bist nicht verheiratet."
+    partnerOffline: "{prefix} §cDein Partner ist momentan nicht online."
+    success: "{prefix} §eDu wurdest zu deinem Partner teleportiert."
+    failed: "{prefix} §cTeleportation zu deinem Partner fehlgeschlagen."
+  kiss:
+    notMarried: "{prefix} §cDu bist nicht verheiratet."
+    partnerOffline: "{prefix} §cDein Partner ist momentan nicht online."
+    received: "{prefix} §e{player} hat dir einen Kuss gegeben!"
+    sent: "{prefix} §eDu hast {partner} einen Kuss gegeben!"
+    broadcast: "{prefix} §e{player} und {partner} haben sich geküsst!"
+  child:
+    notMarried: "{prefix} §cDu bist nicht verheiratet."
+    partnerOffline: "{prefix} §cDein Partner ist momentan nicht online."
+    alreadyHasChild: "{prefix} §cDu und dein Partner haben bereits ein Kind."
+    newChild: "{prefix} §e{player} und {partner} haben ein Kind namens {child}!"
+  status:
+    usage: "{prefix} §cVerwendung: /status <Spieler>"
+    targetNotFound: "{prefix} §cDer angegebene Spieler ist nicht online."
+    notMarried: "{prefix} §c{target} ist nicht verheiratet."
+    info: "{prefix} §e{target} ist mit {partner} verheiratet."
